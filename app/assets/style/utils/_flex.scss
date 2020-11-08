@@ -1,0 +1,58 @@
+.d-flex {
+  display: flex;
+}
+.d-flexSet {
+  display: flex;
+  flex-wrap: wrap;
+  &__gutter {
+    padding-left: $grid-gutter-with / 2;
+    padding-right: $grid-gutter-with / 2;
+    @include mobile {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.fxd-c {
+  flex-direction: column;
+}
+.fxd-rr {
+  flex-direction: row-reverse;
+}
+.fx-jfe {
+  justify-content: flex-end;
+}
+.fx-jcc {
+  justify-content: center;
+}
+.fx-jsb {
+  justify-content: space-between;
+}
+.fx-alc {
+  align-items: center
+}
+.fx-alfe {
+  align-items: flex-end
+}
+
+
+// pad
+@include pad { 
+  .pad-fxd-r {
+    flex-direction: row;
+  }
+  .pad-fx-jfs {
+    justify-content: flex-start;
+  }
+}
+
+// mobile
+@include mobile {
+  .mobile-fxd-c {
+    flex-direction: column;
+  }
+  .mobile-fx-alfs {
+    align-items: flex-start;
+  }
+}
+

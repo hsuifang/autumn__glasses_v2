@@ -1,0 +1,195 @@
+// color
+// ------------------
+@each $key, $val in $themes {
+  .bg-#{$key} {
+    background-color: $val !important;
+  }
+  .#{$key} {
+    color: $val !important;
+  }
+}
+
+
+// spacing
+// ------------------
+@each $key, $val in $sizes {
+  .ml-#{$key} {
+    margin-left: $val;
+  }
+  .mr-#{$key} {
+    margin-right: $val ;
+  }
+  .mt-#{$key} {
+    margin-top: $val;
+  }
+  .mb-#{$key} {
+    margin-bottom: $val;
+  }
+  .pt-#{$key} {
+    padding-top: $val;
+  }
+  .pb-#{$key} {
+    padding-bottom: $val;
+  }
+  .pr-#{$key} {
+    padding-right: $val;
+  }
+  .pl-#{$key} {
+    padding-left: $val;
+  }
+  .py-#{$key} {
+    padding-top: $val;
+    padding-bottom: $val;
+  }
+  .px-#{$key} {
+    padding-left: $val;
+    padding-right: $val;
+  }
+}
+.mx-auto {
+  margin-right:auto;
+  margin-left: auto;
+}
+
+// width
+// ------------------
+@for $i from 1 through 5 {
+  .w-#{$i*25}{
+    width: $i*25%;
+  }
+}
+
+// style - font
+// ------------------
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.align-r {
+  text-align: right;
+}
+.align-c {
+  text-align: center;
+}
+
+// other
+// ----------------------------------------------------------------
+.d-none {
+  display: none;
+}
+.gutter {
+  padding-left: $grid-gutter-with;
+  padding-right: $grid-gutter-with;
+}
+.h-100 {
+  height: 100％;
+}
+.link {
+  border-bottom: 1px solid transparent;
+  &:hover{
+    border-bottom: 1px solid $white;
+  }
+}
+
+// pad
+@include pad { 
+  // helpers
+  @for $i from 1 through 4 {
+    .pad-w-#{$i*25}{
+      width: $i*25%;
+    }
+  }
+  .pad-d-bk {
+    display: block;
+  }
+  .pad-d-none{
+    display: none;
+  }
+  .pad-py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .pad-mr-lg {
+    margin-right: $lg;
+  }
+  .pad-mr-md {
+    margin-right: $md;
+  }
+  .pad-mr-sm {
+    margin-right: $sm;
+  }
+  .pad-mb-halfxs {
+    margin-bottom: $sm / 2 ;
+  }
+  .pad-mb-sm {
+    margin-bottom: $sm;
+  }
+  .pad-mb-lg {
+    margin-bottom: $lg;
+  }
+  .pad-mb-xl {
+    margin-bottom: $xl;
+  }
+  .pad-mb-xxl {
+    margin-bottom: $xxl;
+  }
+}
+
+// bgphone
+@include bgPhone {
+  .bgphone-d-none {
+    display: none;
+  }
+  .bgphone-mr-sm {
+    margin-right: $sm;
+  }
+}
+
+// mobile
+@include mobile {
+  @for $i from 1 through 4 {
+    .mobile-w-#{$i*25} {
+      width: $i*25%;
+    }
+  }
+  .mobile-d-bk {
+    display: block;
+  }
+  .mobile-d-none {
+    display: none;
+  }
+  .mobile-mr-sm {
+    margin-right: $sm;
+  }
+  .mobile-mb-0 {
+    margin-bottom: 0;
+  }
+  .mobile-mb-halfxs {
+    margin-bottom: $xs / 2 ;
+  }
+  .mobile-mb-xs {
+    margin-bottom: $xs
+  }
+  .mobile-mb-sm {
+    margin-bottom: $sm;
+  }
+  .mobile-mb-md {
+    margin-bottom: $md;
+  }
+  .mobile-mb-xxl {
+    margin-bottom: $xxl;
+  }
+  .mobile-mb-custom {
+    margin-bottom: $xl;
+  }
+
+}
+
+// se
+@include se {
+  .se-mr-0 {
+    margin-right: 0;
+  }
+}

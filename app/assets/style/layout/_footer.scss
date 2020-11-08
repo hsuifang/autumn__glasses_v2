@@ -1,0 +1,59 @@
+.footer {
+  background-color: $primary;
+  padding-top: 36px;
+  padding-bottom: 30px;
+  @include pad { padding: 40px 25px; }
+  @include bgPhone { padding: 23px 0 20px; }
+  @include mobile { padding: 23px 0 25px; }
+  .contact-icon {
+    width: 48px;
+    &:hover { 
+      opacity: 0.9;
+    }
+    @include pad { width: 24px; }
+  }
+  .contact-list {
+    margin-bottom: 8px;
+    img {
+      width: 40px;
+      margin-right: 12px;
+    }
+    a {
+      color: $white;
+      font-size: $fsz * 2.25;
+    }
+    @include pad { 
+      img {
+        width: 32px;
+        margin-right: 8px;
+      }
+      a {
+        font-size: $fsz * 1.25;
+      }
+    }
+    @include mobile {
+      img {
+        width: 20px;
+        margin-right: 5px;
+      }
+      a {
+        font-size: $fsz;
+      }
+    }
+  }
+  .policy {
+    @include pad {
+      &__link li {
+        padding-top: 8px;
+        a { font-size: 14px;}
+      }
+      img { width: 46px; }
+    }
+    @include bgPhone { 
+      .policy__declare { font-size: $fsz * 0.75; }
+    }
+    @include mobile { 
+      .policy__declare { font-size: $fsz * 0.875; }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+// width
+//
+$maxWidth: 1140px;
+$pad: 768px;
+$mobile: 576px;
+
+// color
+//
+$primary: #AA0601;
+$secondary: #650300;
+$dark: #111619;
+$white: #fff;
+$caption: #707070;
+
+$themes: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'dark': $dark,
+  'white': $white,
+  'caption': $caption
+);
+
+// spaceing
+//
+$spacer: 16px;
+// =======
+$xs: $spacer;  // 16px
+$sm: $spacer * 1.25; // 20px
+$md: $spacer * 1.5; // 24px
+$lg: $spacer * 1.75; // 28
+$xl: $spacer * 2; // 32
+$xxl: $spacer * 2.5; // 40
+
+$sizes: (
+  '0': 0,
+  'xs': $md, // 16px
+  'sm': $sm, // 20px
+  'md': $md, // 24px
+  'lg': $lg, // 28
+  'xl': $xl, // 32
+  'xxl': $xxl // 40
+);
+
+// font-size
+//
+$fsz: 16px;
+// 14px = 0.875
+// 16px = 1
+// 20px = 1.25
+// 24px = 1.5
+// 28px = 1.75
+// 32px = 2
+// 36px = 2.25
+// 40px = 2.5
+// 48px = 3
+// 64px = 4
+// 72px = 4.5
+
+// Grid System
+// 
+$grid-breakpoints: (
+  'pad': $pad,
+  'mobile': $mobile
+);
+
+$grid-gutter-with: 30px;
+$grid-columns: 12;
+

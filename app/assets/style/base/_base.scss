@@ -1,0 +1,26 @@
+// base
+*, *:after, *:before {
+  position: relative;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Roboto', sans-serif, "微軟正黑體";
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.5s;
+}
+h1, h2 {
+  font-weight: bold;
+}
+a, p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+img{
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}

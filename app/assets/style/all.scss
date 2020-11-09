@@ -12,6 +12,11 @@
 // layout
 @import "layout/nav";
 @import "layout/footer";
+@import "layout/main";
+
+// components
+@import "components/pagination";
 
 // page
 @import "pages/home";
+@import "pages/product";

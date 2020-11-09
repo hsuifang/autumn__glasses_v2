@@ -12,12 +12,16 @@ $dark: #111619;
 $white: #fff;
 $caption: #707070;
 
+$product-1: #5F3E2D;
+$product-2: #B75929;
 $themes: (
   'primary': $primary,
   'secondary': $secondary,
   'dark': $dark,
   'white': $white,
-  'caption': $caption
+  'caption': $caption,
+  'product-1': $product-1,
+  'product-2': $product-2
 );
 
 // spaceing

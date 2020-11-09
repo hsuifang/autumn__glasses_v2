@@ -57,17 +57,7 @@
     }
   }
 }
-// section
-.product, .co-brand, .recommend, .contact {
-  padding-top: 64px;
-  padding-bottom: 80px;
-  @include pad {
-    padding: 40px 25px;
-  }
-  @include bgPhone {
-    padding: 32px 0;
-  }
-}
+
 .introduction {
   background-color: rgba($primary, 0.05);
   padding-top: 64px;

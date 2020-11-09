@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  width: 100%; 
+  max-width: $maxWidth;
+  padding-right: $grid-gutter-with / 2;
+  padding-left: $grid-gutter-with / 2;
+  @include pad {
+    max-width: $pad;
+  }
+  @include mobile {
+    max-width: $mobile;
+  }
+}
+// home
+.product, .co-brand, .recommend, .contact {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  @include pad {
+    padding: 40px 25px;
+  }
+  @include bgPhone {
+    padding: 32px 0;
+  }
+}

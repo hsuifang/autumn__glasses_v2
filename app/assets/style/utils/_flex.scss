@@ -5,8 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   &__gutter {
-    padding-left: $grid-gutter-with / 2;
-    padding-right: $grid-gutter-with / 2;
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
     @include mobile {
       padding-left: 0;
       padding-right: 0;

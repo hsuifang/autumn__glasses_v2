@@ -1014,6 +1014,8 @@ a {
     cursor: pointer; }
     .pagination__item a {
       color: #000; }
+    .pagination__item:hover {
+      background: #eee; }
   .pagination__item--active {
     background: #000; }
     .pagination__item--active a {

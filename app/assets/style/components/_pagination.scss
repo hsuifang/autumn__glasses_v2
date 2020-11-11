@@ -5,6 +5,9 @@
     border: 1px solid #555;
     cursor: pointer;
     a { color: #000; }
+    &:hover{ 
+      background: #eee;
+    }
   }
   &__item--active {
     background: #000;

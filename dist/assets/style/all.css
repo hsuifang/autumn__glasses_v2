@@ -877,18 +877,25 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-  @media (max-width: 568px) {
-    .bar__logo {
-      padding: 10px; }
-      .bar__logo img {
-        width: 48px; } }
+  .bar__logo a {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo.png");
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+    @media (max-width: 568px) {
+      .bar__logo a {
+        margin: 10px;
+        width: 48px;
+        height: 30px; } }
   .bar__nav {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    display: flex; }
     @media (max-width: 568px) {
       .bar__nav {
         width: 100%;
@@ -900,8 +907,6 @@ a {
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; }
-    .bar__nav__item:hover {
-      border-bottom: 2px solid #fff; }
     .bar__nav__item:first-of-type {
       margin-left: 0; }
     @media (max-width: 768px) {
@@ -916,6 +921,12 @@ a {
         border: 1px solid #fff;
         width: 50%;
         text-align: center; } }
+    .bar__nav__item:hover {
+      border-bottom: 2px solid #fff; }
+      @media (max-width: 568px) {
+        .bar__nav__item:hover {
+          border: 1px solid #fff;
+          font-weight: bold; } }
   .bar__nav__link {
     color: #fff;
     font-size: 20px;
@@ -1047,6 +1058,7 @@ a {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 840px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1241,16 +1253,10 @@ a {
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 350px;
+  width: 48%;
   text-align: center;
   text-decoration: none;
   cursor: pointer; }
-  @media (max-width: 768px) {
-    .btn {
-      width: 210px; } }
-  @media (max-width: 568px) {
-    .btn {
-      width: 165px; } }
 
 .divider {
   margin-top: 1.5rem;
@@ -1399,7 +1405,7 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
-  .location-banner h1 {
+  .location-banner h2 {
     font-size: 64px;
     line-height: 1.25; }
 

@@ -1,0 +1,35 @@
+.faq {
+  padding-top: 88px;
+  padding-bottom: 284px;
+  @include pad {
+    padding: 40px 40px 84px;
+  }
+  @include mobile {
+    padding: 24px 0 36px;
+  }
+  &__title {
+    font-size: $fsz * 2;
+    margin-bottom: 20px;
+    @include pad { margin-bottom: 16px; }
+    @include mobile { margin-bottom: 12px; }
+  }
+}
+
+ul .faqList {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include mobile { padding-top: 0; }
+  &__question {
+    font-size: $fsz * 1.25;
+    line-height: 1.15;
+    font-weight: bold;
+    margin-bottom: 16px;
+    @include pad {
+      margin-bottom: 8px;
+    }
+  }
+  &__answer {
+    margin-left: 75px;
+    @include pad {margin-left: 59px;}
+  }
+}

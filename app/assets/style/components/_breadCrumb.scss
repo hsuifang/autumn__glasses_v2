@@ -1,0 +1,17 @@
+.breadCrumb {
+  display: flex;
+  &__item {
+    color: #000;
+    line-height: 1.5;
+    margin-right: 5px;
+    &:after {
+      content: " /";
+    }
+    &:last-of-type:after {
+      content: "";
+    }
+    &--current {
+      color: $primary;
+    }
+  }
+}

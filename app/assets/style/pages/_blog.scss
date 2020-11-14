@@ -1,0 +1,123 @@
+.blogNav {
+  @include mobile { display: none; }
+}
+.blogBreadCrumb {
+  &__item  a {
+    color: $white;
+    padding-top: 12px ;
+    padding-bottom: 12px ;
+    display: block;
+    margin-right: 48px;
+  }
+}
+.blog-search {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.blog-topicArea {
+  padding-top: 82px;
+  padding-bottom: 156px;
+  @include pad {
+    padding: 40px 40px 72px 40px;
+  }
+  @include mobile { 
+    padding: 24px 0 56px;
+  }
+}
+
+.topic {
+  display: flex;
+  margin-bottom: 60px;
+  @include pad {margin-bottom: 32px;}
+  @include mobile { 
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+  &__cover{
+    width: 55%;
+    margin-right: 30px;
+    object-fit: cover;
+    @include pad { width: 50%; }
+    @include mobile { 
+      width: 100%; 
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+  &__content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include pad { width: 50%; }
+    @include mobile { width: 100%; }
+  }
+  &__title {
+    color: $secondary;
+    font-size: $fsz * 2;
+    line-height: 1.5;
+    @include pad { font-size: $fsz * 1.25;}
+    @include mobile { 
+      font-size: $fsz;
+    }
+  }
+  &__meta {
+    margin-bottom: 26px;
+    @include flex(flex, space-between, flex-end);
+    p:first-of-type {
+      font-weight: bold;
+      font-size: $fsz * 1.25;
+      line-height: 1.5;
+    }
+    p:last-of-type {
+      font-size: $fsz;
+      line-height: 1.5;
+      color: rgba(0,0,0, 0.7);
+    }
+    @include pad {
+      margin-bottom: 16px;
+      p:first-of-type {
+        font-size: $fsz;
+      }
+      p:last-of-type {
+        font-size: $fsz * 0.875;
+      }
+    }
+    @include mobile {
+      margin-bottom: 0;
+      p {
+        font-size: $fsz;
+      }
+    }
+  }
+  &__text {
+    font-size: $fsz * 1.25;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+    @include pad {
+      font-size: $fsz * 0.875;
+      margin-bottom: 0;
+    }
+    @include mobile { display: none;}
+    &__more {
+      display: none;
+      color: #555;
+      &:hover {color: #000;}
+      @include pad { display: initial; }
+    }
+  }
+  &__footer {
+    text-align: right;
+    @include pad {display: none;}
+    a { 
+      color: $secondary;
+      font-size: $fsz * 2.25;
+      font-weight: bold;
+      &:hover {
+        border-bottom: 1px solid $secondary;
+      }
+    }
+  }
+}

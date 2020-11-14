@@ -23,6 +23,19 @@
     padding: 32px 0;
   }
 }
-.page-padding-2 {
-  
+
+// banner
+// location / faq
+.banner {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/qa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 304px;
+  display: flex;
+  align-items: flex-end;
+  h2 { 
+    font-size: $fsz * 4;
+    line-height: 1.25;
+  }
 }

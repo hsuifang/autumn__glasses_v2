@@ -37,6 +37,7 @@ $xxl: $spacer * 2.5; // 40
 
 $sizes: (
   '0': 0,
+  'halfxs': $xs / 2,
   'xs': $md, // 16px
   'sm': $sm, // 20px
   'md': $md, // 24px
@@ -70,3 +71,15 @@ $grid-breakpoints: (
 $grid-gutter-width: 30px;
 $grid-columns: 12;
 
+// properties
+$properties: (
+  "mt": margin-top,
+  "mb": margin-bottom,
+  "ml": margin-left,
+  "mr": margin-right,
+  "pt": padding-top,
+  "pb": padding-bottom,
+  "pl": padding-left,
+  "pr": padding-right,
+  "fsz": font-size
+);

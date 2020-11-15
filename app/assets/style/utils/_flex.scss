@@ -1,6 +1,9 @@
 .d-flex {
   display: flex;
 }
+.fx-wrap {
+  flex-wrap: wrap;
+}
 .d-flexSet {
   display: flex;
   flex-wrap: wrap;
@@ -48,11 +51,17 @@
 
 // mobile
 @include mobile {
+  .mobile-fxd-r {
+    flex-direction: row;
+  }
   .mobile-fxd-c {
     flex-direction: column;
   }
   .mobile-fx-alfs {
     align-items: flex-start;
+  }
+  .mobile-order-3 {
+    order: 3;
   }
 }
 

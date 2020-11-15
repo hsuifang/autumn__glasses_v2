@@ -1,9 +1,12 @@
 .breadCrumb {
   display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
   &__item {
     color: #000;
     line-height: 1.5;
     margin-right: 5px;
+    @include pad { font-size: 14px; }
     &:after {
       content: " /";
     }

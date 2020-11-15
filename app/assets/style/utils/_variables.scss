@@ -10,7 +10,9 @@ $primary: #AA0601;
 $secondary: #650300;
 $dark: #111619;
 $white: #fff;
+$black: #000;
 $caption: #707070;
+$gray-1: #6C6C6C;
 
 $product-1: #5F3E2D;
 $product-2: #B75929;
@@ -19,7 +21,9 @@ $themes: (
   'secondary': $secondary,
   'dark': $dark,
   'white': $white,
+  'black': $black,
   'caption': $caption,
+  'gray-1': $gray-1,
   'product-1': $product-1,
   'product-2': $product-2
 );
@@ -38,12 +42,22 @@ $xxl: $spacer * 2.5; // 40
 $sizes: (
   '0': 0,
   'halfxs': $xs / 2,
-  'xs': $md, // 16px
+  'xs': $xs, // 16px
   'sm': $sm, // 20px
   'md': $md, // 24px
   'lg': $lg, // 28
   'xl': $xl, // 32
   'xxl': $xxl // 40
+);
+
+$line-height: (
+  '100': 1,
+  '125': 1.25,
+  '140': 1.4,
+  '150': 1.5,
+  '200': 2,
+  '250': 2.5,
+  '300': 3
 );
 
 // font-size

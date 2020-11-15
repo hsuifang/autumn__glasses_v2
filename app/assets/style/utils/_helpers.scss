@@ -55,6 +55,12 @@
   text-align: center;
 }
 
+@each $key, $val in $line-height{
+  .lh-#{$key}{
+    line-height:  $val;
+  }
+}
+
 // other
 // ----------------------------------------------------------------
 .d-none {
@@ -124,6 +130,12 @@
     .mobile-w-#{$i*25} {
       width: $i*25%;
     }
+  }
+  .mobile-align-r {
+    text-align: right;
+  }
+  .mobile-align-l {
+    text-align: left;
   }
   .mobile-d-bk {
     display: block;
